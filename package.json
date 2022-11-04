@@ -1,0 +1,34 @@
+{
+  "name": "array-map-async",
+  "description": "Array.map with sequential processing async/await",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "author": {
+    "name": "Esteban Fuentealba",
+    "email": "efuentealba@json.cl"
+  },
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/mapAsync.umd.js",
+  "module": "./dist/mapAsync.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/mapAsync.es.js",
+      "require": "./dist/mapAsync.umd.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && tsc --emitDeclarationOnly",
+    "preview": "vite preview",
+    "prepare": "yarn build"
+  },
+  "devDependencies": {
+    "typescript": "^4.6.4",
+    "vite": "^3.2.0"
+  },
+  "types": "./dist/mapAsync.d.ts"
+}
