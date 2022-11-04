@@ -1,4 +1,4 @@
-#   Array.asyncMap 
+#   Array.mapAsync 
 Array.map with sequential processing async/await
 
 ##  Installation:
@@ -10,15 +10,21 @@ npm i array-async-map --save
 ### Usage:
 You need only import package and use `Array` like `.map`
 ```js
-import 'array-async-map';
+import 'array-map-async';
 
-const results = await [1,2,3].asyncMap(async (item, index)=> {
-    console.log("sleep 1s")
-    await sleep(1000);  // or fetch/timer/any
-    console.log(item)
-    return `#${item}`;
-});
-console.log(results);
+//  sleep() demo function
+const sleep = (milliseconds) => new Promise(resolve => setTimeout(() => { resolve() }, milliseconds));
+
+(async () => {
+    const results = await [1,2,3].mapAsync(async (item, index)=> {
+        console.log("sleep 1s")
+        await sleep(1000);  // or fetch/timer/any
+        console.log(item)
+        return `#${item}`;
+    });
+    console.log(results);
+})();
+
 
 //  Results
 //
