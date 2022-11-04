@@ -2,7 +2,7 @@
   "name": "array-map-async",
   "description": "Array.map with sequential processing async/await",
   "private": false,
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "author": {
     "name": "Esteban Fuentealba",

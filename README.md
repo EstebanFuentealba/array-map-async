@@ -4,7 +4,7 @@ Array.map with sequential processing async/await
 ##  Installation:
 Install the dependency
 ```js
-npm i array-async-map --save
+npm i array-map-async --save
 ```
 
 ### Usage:
