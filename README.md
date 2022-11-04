@@ -18,7 +18,7 @@ const sleep = (milliseconds) => new Promise(resolve => setTimeout(() => { resolv
 (async () => {
     const results = await [1,2,3].mapAsync(async (item, index)=> {
         console.log("sleep 1s")
-        await sleep(1000);  // or fetch/timer/any
+        await sleep(1000);  // or fetch/timer/any Promise
         console.log(item)
         return `#${item}`;
     });
