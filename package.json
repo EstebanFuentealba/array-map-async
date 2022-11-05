@@ -2,8 +2,23 @@
   "name": "array-map-async",
   "description": "Array.map with sequential processing async/await",
   "private": false,
-  "version": "1.0.3",
+  "version": "1.0.4",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EstebanFuentealba/array-map-async.git"
+  },
+  "bugs": {
+    "url": "https://github.com/EstebanFuentealba/array-map-async/issues"
+  },
+  "homepage": "https://github.com/EstebanFuentealba/array-map-async/",
+  "keywords": [
+    "javascript",
+    "map",
+    "async",
+    "promise",
+    "mapAsync"
+  ],
   "author": {
     "name": "Esteban Fuentealba",
     "email": "efuentealba@json.cl"
